@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head')%>
+  <%- include('partials/navbar')%>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
 
-<body>
   <h1>All the cats</h1>
   <ul>
     <% for(let cat of cats) { %>
@@ -16,6 +10,4 @@
       </li>
       <% } %>
   </ul>
-</body>
-
-</html>
+  <%- include('partials/footer')%>
